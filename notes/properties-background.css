@@ -1,0 +1,67 @@
+section1 h1{
+    color: red;
+}
+
+section1 h2{
+    color: #7676d8c0;
+}
+
+section1 h3{
+    color: rgba(32, 197, 226, 0.486)
+}
+
+body{
+    
+    background-image: url("image/Muzan.jpg");
+   
+}
+
+section1 h4{
+    background-color: aqua;
+}
+
+.background{
+    background-image: url("image/Furina.jpeg");
+    height: 100px; /*careful with height width this is how much space they took in a site*/
+    width: 100px;
+    background-repeat: no-repeat;  
+    background-size: 100px;  /*and this is how much space the picture took from that height and width*/
+    
+}
+.bg1{
+    background-image: url("image/githublogo.png");
+    height: 1000px;   /*here background repeated in y axis so we need bigger height*/
+    width: 100px;
+    background-size: 100px;
+    background-repeat: repeat-y;
+    
+}
+
+.bg2{
+    background-image: url("image/tiktoklogo.png");
+    width: 1000px;
+    height: 1000px;
+    background-size: 500px;
+    background-repeat: repeat-x;
+    background-attachment: fixed; /*will fixed the pic but it won't start from top if it's not at top so it won't scroll down and this will start from exactly where it is*/
+   
+}
+
+.bg3{
+    background-image: url("image/tiktoklogo.png");
+    width: 1000px;
+    height: 1000px;
+    background-size: 500px;
+    background-repeat: repeat-x;
+    background-attachment: scroll; /*now it will scroll*/
+   
+}
+
+.bg4{
+    background-image: url("image/Furina.jpeg");
+    height: 500px;
+    width: 500px;
+    background-size: 100px;
+    background-position: center;    /*position will change according to heiht and width*/
+    background-repeat: no-repeat;
+}

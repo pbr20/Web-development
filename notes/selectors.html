@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="selectors.css">
+    <title>Selectors</title>
+    <!--Combined selectors-->
+  <style>
+    h1,h2,p{
+        color: black;
+    }
+  </style>
+</head>
+<body>
+   <h1 class="special">i</h1> <!--even tho its look same class  but h1 class is specified for it check css-->
+   <h2>y</h2>
+   <p class="special">sh</p>
+
+   <h3>Shopping list</h3>
+   <ul>
+       <li>Milk</li>                <!--u can also change list style type from csss-->
+       <li>Coco powder</li>
+       <li>Baking powder</li>
+       <li class="special">Eggs</li> <!--u can also make separate class and use them check style sheet for how-->
+       <li>vanila</li>
+       <li> <em>nonstick pot</em></li> <!--to select em tag inside li tag write li em{} check css-->
+       <li>flour</li>
+   </ul>
+
+   <h1>I'm Rithen</h1> <!--in css if u write a tag name + another tag name that is right after the first tag then u can style those two together -->
+   <h2>I'm Rithen</h2> <!--remember this will only works if it's right after otherwise it wont work-->
+   <h3>I'm Rithen</h3> <!--here this will work-->
+   <h4>I'm Rithen</h4>
+   <h5>I'm Rithen</h5>
+   <h6>I'm Rithen</h6>
+   <h1>I'm Rithen</h1>
+   <h5>I'm Rithen</h5> <!--here it wont coz h2 is'nt right after h1 there is h5 in between-->
+   <h2>I'm Rithen</h2> <!--check css why h1 & h2-->
+
+   <!--Sudo class selector-->
+
+   <a href="https://www.google.com" target="_blank"><em>Google</em></a>
+   <!--tag name:hover is the syntax check css of anchor tag for more-->
+
+   <br>
+   <hr>       <!--check how can u select small tag on css-->
+   <p>I'm doing <small class="special">bsc</small> on <b>CSE</b> at <i>IIUC</i></p>
+   <p>Currently I'm at 1<sup class="special">st</sup> semester</p>
+   <p>H<sub>2</sub>O</p>
+   <hr> <br>
+   <!--ID selector-->
+   <!--id selector and class selector are same the only diff is u have to use # instead of .-->
+
+   <br>
+    <hr>
+    <p>I'm doing <small id="PBR">bsc</small> on <b>CSE</b> at <i>IIUC</i></p>
+    <p>Currently I'm at 1<sup>st</sup> semester</p>
+    <p>H<sub>2</sub>O</p>
+    <hr> <br>
+
+   <!--Attribute selector-->
+   <!--Syntax [attribute name]{}-->
+   <!--check css-->
+    <section1><h3>Attribute selector</h3> <!--to identify same types of periodical tag we can use section1 2 3 4 tags-->
+    <ul>
+        <li class="ab">Milk</li>
+        <li class="a b">Coco powder</li>
+        <li class="a">Baking powder</li>
+        <li>Eggs</li>
+        <li>vanila</li>
+        <li class="Mundhu">nonstick pot</li>
+        <li>flour</li>
+    </ul></section1>
+
+    <section2><h3>Attribute selector</h3> <!--u can also select different class by attribute selector check css-->
+      <ul>
+          <li class="ab">Milk</li>
+          <li class="a b">Coco powder</li> <!--now with this (~=) sytax u can call for all one class like a , (a b) where a and b is twi different classes-->
+          <li class="a">Baking powder</li>
+          <li>Eggs</li>
+          <li>vanila</li>
+          <li class="Mundhu">nonstick pot</li>
+          <li>flour</li>
+      </ul></section2>
+
+      <!--Universal selector-->
+      <!--synta: *{}-->
+      <!--funtion apply all the style for every single element in a site-->
+      <!--Check css-->
+
+
+</body>
+</html>

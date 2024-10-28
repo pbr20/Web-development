@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyperlink</title>
+</head>
+
+<body>
+
+    <!--Hyper link -->
+    <p>Google in same tab</p>
+    <a href="https://www.google.com"> Google </a>
+    <p>Google in new tab</p>
+    <a href="https://www.google.com" target="_blank">GOOGLE</a> <!--Target will open this hyperlink into a new tab-->
+
+    <!--Hyperlink in same folder-->
+
+    <p>file from same folder</p>
+    <a href="entity.html" target="_blank">Entity</a>
+    <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
+        <h3>Youtube</h3>
+    </a> <!--We can also use different formating or other tags in (a) tag-->
+    <a href="https://docs.emmet.io/cheat-sheet/" target="_blank" rel="noopener noreferrer">Cheat-Sheet</a>
+    <!--Don't forget to use cheat sheet-->
+
+    <!--File from different folder-->
+
+    <p>File from different folder</p>
+    <a href="personalweb/biography.html" target="_blank" rel="noopener noreferrer">Biography</a>
+
+    <!--in this way u can only enter the folder that's mean u can't exit folder-->
+    <!--that's mean u can only link those site which is in different folder but that folder is in same folder where the main website exist-->
+
+    <p>PDF</p>
+    <a href="p6note/1.Chapter 1_Dynamics of Rigid Body.pdf" target="_blank" rel="noopener noreferrer">P6c1-pdf</a>
+    <br> <!--Use br tag to move to new line-->
+    <a href="p6note/10.Chapter 2_ Gravity and Gravitation.pdf" target="_blank" rel="noopener noreferrer">P6c2-pdf</a>
+    <!--You can also link pdf in same way-->
+
+    <hr>
+
+    <!--Image-->
+    <p>Images</p>
+    <img src="image/Muzan.jpg" alt="This is an image">
+
+    <!--alt attribute used for altranative text if the image failed to load or the image link is wrong then this will shown on website-->
+
+    <br>
+    <img src="imae/Muzan.jpg" alt="This is an image">
+
+    <!--Use height or width attribute for customize pic size-->
+
+    <br>
+    <img src="image/Muzan.jpg" alt="image!" width="50" height="90">
+    <!--But this aspect ratio to get the aspect ration of an image use either height attribute or width-->
+
+    <br>
+    <img src="image/Muzan.jpg" alt="Face of Muzan" height="200">
+
+    <hr>
+
+    <!--Video-->
+    <p>Videos</p>
+    <video src="video/genshin-impact---cutscene-animation-sinners-finale.mp4" width="500"></video>
+
+    <!--Even tho the video is uploaded on this site but we can't controll it -->
+
+    <br>
+    <video src="video/genshin-impact---cutscene-animation-sinners-finale.mp4" width="400" autoplay></video>
+
+    <!--This is autoplay whenever someone visit this site the video will automaticall start playing and user won't have the controll on it-->
+    <!--still the video won't play in some case coz Most browsers (Chrome, Safari, Firefox, etc.) block autoplay of unmuted videos by default to prevent disruptive ads and sounds.-->
+
+    <br>
+    <video src="video/genshin-impact---cutscene-animation-sinners-finale.mp4" width="400" autoplay muted></video>
+    <!--Try sending muted then autoplay will work-->
+    <!--It will also start the video muted initially then u can unmute there-->
+
+    <br>
+    <video src="video/genshin-impact---cutscene-animation-sinners-finale.mp4" width="400" controls></video>
+    <!--This will give controls to user-->
+
+    <br>
+    <video src="video/genshin-impact---cutscene-animation-sinners-finale.mp4" width="400" controls loop></video>
+    <!--This will loopthe video so when the video will end it will restrat again-->
+
+    <br>
+    <video src="video/genshin-impact---cutscene-animation-sinners-finale.mp4" width="400" controls
+        poster="image/Furina.jpeg"></video>
+    <!--poster will give a thumbnail of a video-->
+
+    <!--iframe-->
+    <p>fframe to show other site videos in your site</p>
+    <h4>This is where i learned web development</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4?si=ihNQXawMgJZkLmlC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0"></iframe>
+
+    <!--This is so simple just copy the link on src if u r posting yt videos then just go to that video and from share icon press on embed and copy the text done in this case don't type iframe -->
+
+    <iframe src="https://www.google.com" frameborder="0" width="700"></iframe>
+
+    <!--You can also open another site while u r in your site opened -->
+
+    <!--As u can see google denied to embed coz Google sets an X-Frame-Options HTTP header with the value DENY or SAMEORIGIN. This header tells the browser not to allow the page to be displayed in an <iframe>, unless the iframe is from the same origin as the site itself.-->
+
+    <iframe src="https://docs.emmet.io/abbreviations/" frameborder="0" width="1000" height="1000"></iframe>
+
+    <!--Now this site dont use that X-Frame-Options so it's embeded-->
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>

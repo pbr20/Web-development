@@ -1,0 +1,61 @@
+li{
+    list-style-type: georgian;
+}
+
+.special{
+    color: orange;
+    font-weight: bolder;
+}
+
+h1.special{
+    color: greenyellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li em{
+    color: purple;
+}
+
+h1+h2{
+    color: blue;
+}
+
+a:hover{
+    color: red;
+    font-size: 300%;
+    text-decoration: none;
+}
+
+body p small.special{
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+body p small#PBR{
+    color: greenyellow;
+    background-color: purple;
+    padding: 5px;
+}
+
+body section1 li[class]{
+    color: skyblue;
+    font-size: medium;
+}
+
+section2 li[class="ab"]{
+    color: royalblue;
+}
+
+section2 li[class="Mundhu"]{
+    color: rosybrown;
+}
+
+section2 li[class~="a"]{
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!--We don't have a 24/7 server so left this action value empty-->
+    <form action="">
+        <h3 style="text-align: center;">Payment form</h3>
+        <p>Required fields are followed by *</p>
+        <h4 style="text-align: center;"><u>Contact information</u></h4>
+        <p>Name: *<input type="text" name="name" required></p>
+        
+    <!--Here after input type we use name attribute this attribute send this name to the 24/7 server and save that beside name which we wrote inside the qutation mark-->
+   <!--we use required attribute so that use can't submit the form by lefting this box empty -->
+    <fieldset>
+        <legend>Gender *</legend> <!--legeng tag give a name to a group-->
+        <p>   <!--Radio give multiple choice and u can select one-->
+            Male <input type="radio" name="Gender" id="male" required>  <!--id value denotes what value will save beside name value into 24/7 server-->
+            Female <input type="radio" name="Gender" id="female" required>
+        </p>
+    
+    </fieldset> <!--fieldset tag wrap all the things inside this tag in a group-->
+  <br>
+    Address: <textarea name="address" id="address" cols="100" rows="10"></textarea>
+
+    <!--This will give a textarea to take big input from users -->
+
+    <p>Email: *<input type="email" name="Email" id="Email" required></p>
+    <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
+
+    <!--There is  more input types watch them below the link-->
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank"></a>
+
+    <p>Card Types *
+        <select name="Card_type" id="Card_type" required> <!--Swlect also give multiple choices but with value -->
+            <option value="">Select a Card Type</option> <!--This is the first option where u write smth to show the use this is the place where they will select and the value will left empty so this value dont send to server-->
+            <option value="Visa">Visa</option> <!--Inside option tag whatever is written will shown to user and inside attribute value whatever is writeen will send to server-->
+            <option value="Paypal">Paypal</option>
+            <option value="Nexuspay">Nexuspay</option>
+        </select>
+    </p>
+
+    <p>Card number *
+        <input type="number" name="card_number" id="Card_number" required>
+    </p>
+    <p>Expiration Date *<input type="date" name="expiration_date" id="Expiration_date" required></p> 
+    <p>CVV *<input type="password" name="CVV" id="CVV" required></p>
+
+    <input type="submit" value="Pay now"> <!--Now this value will shown to user in site-->
+                <!--Now by clicking this button user will submit this form-->
+</form>
+</body>
+</html>
